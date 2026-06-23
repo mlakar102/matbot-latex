@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: matbot-latex
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && apt-get update && apt-get install -y texlive-full"
+    startCommand: "python server.py"
+``
